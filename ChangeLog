@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Aug  3 12:11:37 PDT 2001
+idents/doc release.notes
+
+Modified Files:
+	release.notes 
+Log Message:
+update for changes in AcdId
+    *
+------------------------------------------------------------
 User: heather  Fri Aug  3 12:09:01 PDT 2001
 idents/idents AcdId.h
 
