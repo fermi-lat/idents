@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Thu Mar 21 20:45:36 PST 2002
+idents/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+fix missing void --> v2r4p2
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar 21 20:45:36 PST 2002
 idents/cmt
 
 Modified Files:
