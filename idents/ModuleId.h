@@ -1,4 +1,4 @@
-// $Id: ModuleId.h,v 1.1 2000/12/11 16:36:17 burnett Exp $
+// $Id: ModuleId.h,v 1.3 2001/03/20 20:52:41 burnett Exp $
 
 #ifndef GLAST_MODULEID_H
 #define GLAST_MODULEID_H 1
@@ -14,7 +14,7 @@ class ModuleId
 {
   public:
 
-      enum {yNum=4, yNum=4}; // not likely to change again
+      enum {xNum=4, yNum=4}; // not likely to change again
 
       //! create from another Id (0..15)
       ModuleId (unsigned int id = 0):m_id(id){}
