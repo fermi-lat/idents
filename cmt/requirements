@@ -1,6 +1,6 @@
 package idents
-# $Header: /nfs/slac/g/glast/ground/cvs/idents/cmt/requirements,v 1.9 2002/04/03 01:16:36 burnett Exp $
-version v2r5
+# $Header: /nfs/slac/g/glast/ground/cvs/idents/cmt/requirements,v 1.10 2002/04/26 08:50:03 frailis Exp $
+version v2r7
 
 use GlastPolicy
 
