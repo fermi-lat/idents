@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Wed Jul 25 07:26:19 PDT 2001
+idents/idents CalLogId.h
+
+Added Files:
+	CalLogId.h 
+Log Message:
+First release of CalLogId class.
+    *
+------------------------------------------------------------
 User: igable  Sun Jul 15 14:58:30 PDT 2001
 idents/cmt requirements
 
