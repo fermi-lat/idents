@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Mar 21 06:34:02 PST 2001
+idents/idents AcdId.h
+
+Modified Files:
+	AcdId.h 
+Log Message:
+fixed up AcdId - tower/tile associations will now be handled 
+elsewhere
+    *
+------------------------------------------------------------
 TAG activity
 User: burnett  Tue Mar 20 13:41:24 2001
 Tag name: v1r2
