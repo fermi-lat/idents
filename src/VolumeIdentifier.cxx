@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/VolumeIdentifier.cxx,v 1.2 2001/12/15 11:05:15 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/VolumeIdentifier.cxx,v 1.3 2002/01/08 21:36:12 burnett Exp $
 
 #include "idents/VolumeIdentifier.h"
 
@@ -59,7 +59,8 @@ void VolumeIdentifier::update()
     assert(size()<11); 
     for(VolumeIdentifier::iterator i = begin(); i!=end(); ++i){
         assert ((*i)<32);
-        m_value =(m_value >> 6) | (*i) << 54;
+	int64 t = *i;
+        m_value =(m_value >> 6) | (t << 54);
     }
     
 }
