@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:57:00 PDT 2004
+idents/idents
+
+Modified Files:
+	TkrId.h 
+Log Message:
+Reorganize somewhat for CalibData use
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Aug  4 12:12:24 PDT 2004
 idents/doc
 
