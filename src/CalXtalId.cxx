@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/CalXtalId.cxx,v 1.3 2002/06/14 20:30:26 chehtman Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/CalXtalId.cxx,v 1.4 2004/06/14 21:18:00 jrb Exp $
 //
 // ClassName:   CalXtalId        
 //  
@@ -58,7 +58,7 @@ CalXtalId::CalXtalId(const VolumeIdentifier& vId, unsigned xNum) {
     }
     if (vId[fTowerX] >= xNum) throw std::invalid_argument("xNum");
     short tower = xNum*vId[fTowerY] + vId[fTowerX];
-    packId(tower, vId[fLayer], vId[fCALLog]);
+    packId(tower, vId[fLayer], vId[fCALLog], FACE_UNUSED, RANGE_UNUSED);
 }
 
 // the inserter to stream unpacked tower, layer and column
@@ -67,6 +67,8 @@ void CalXtalId::write(std::ostream &stream) const
     stream << getTower() << " ";
     stream << getLayer() << " ";
     stream << getColumn() << " ";
+    if (validFace() ) stream << getFace() << " ";
+    if (validRange() ) stream << getRange() << " ";
 }
 
 
@@ -75,7 +77,7 @@ void CalXtalId::read(std::istream &stream)
 {
     int tower,layer,column;
     stream >> tower >> layer >> column;
-    packId(tower, layer, column);		
+    packId(tower, layer, column, FACE_UNUSED, RANGE_UNUSED);		
 }
 
 
