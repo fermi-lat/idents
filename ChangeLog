@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Oct 21 11:24:15 PDT 2004
+idents/src/test
+
+Modified Files:
+	test_idents.cxx 
+Log Message:
+add try catch for AcdId
+    *
+------------------------------------------------------------
 User: heather  Thu Oct 21 11:20:45 PDT 2004
 idents/src
 
