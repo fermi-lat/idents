@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Thu Mar 28 16:52:40 PST 2002
+idents/idents
+
+Modified Files:
+	CalLogId.h 
+Log Message:
+restore >>, << overrides; add comments from Eric
+    *
+------------------------------------------------------------
 User: richard  Tue Mar 26 14:26:13 PST 2002
 idents/idents
 
