@@ -15,7 +15,7 @@ namespace idents {
 *  sufficiently; that is, if fields of interest are moved.
 * @author  J. Bogart
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.5 2004/08/26 23:35:25 cohen Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.6 2004/10/01 19:39:15 usher Exp $
 */
   class VolumeIdentifier;
 
@@ -30,11 +30,12 @@ namespace idents {
     */
     TkrId(const VolumeIdentifier& vId);
     /** constructor including just enough information to identify 
-        silicon plane (view optional)
-    */
+        silicon plane (view optional)     */
     TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top, 
           int view=eMeasureNone);
             
+    TkrId() : m_packedId(0) {};
+
     ~TkrId() {};
 
     bool isEqual(const TkrId& other) {
@@ -193,8 +194,6 @@ namespace idents {
     void write(std::ostream &stream) const;
 
   private:
-    /// Unuseful default constructor
-    TkrId() : m_packedId(0) {};
 
     /// Does the actual work; extracted here since gcc doesn't let
     /// debugger see symbols
