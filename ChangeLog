@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Mar 21 06:35:18 PST 2001
+idents/idents ScintillatorId.h
+
+Removed Files:
+	ScintillatorId.h 
+Log Message:
+Removing the old ScintillatorId file - it should no longer be used
+    *
+------------------------------------------------------------
 User: heather  Wed Mar 21 06:34:02 PST 2001
 idents/idents AcdId.h
 
