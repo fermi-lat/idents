@@ -47,7 +47,7 @@ namespace idents {
 *              
 * @author  J. Eric Grove	                     
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/CalXtalId.h,v 1.5 2004/06/14 21:17:45 jrb Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/CalXtalId.h,v 1.6 2004/10/09 00:30:26 jrb Exp $
 */
     class VolumeIdentifier;
 
@@ -90,6 +90,12 @@ namespace idents {
                 SMALL = 1
             } DiodeType;
 		
+        /// Return diode type, given AdcRange
+        static DiodeType rangeToDiode(AdcRange range) {
+            if ((range == LEX8) || (range == LEX1)) return LARGE;
+            else return SMALL;
+        }
+
         /// constructor from packed Id
         CalXtalId(int packedId=0) :
         m_packedId(packedId) {};
@@ -189,7 +195,8 @@ namespace idents {
                 m_packedId += ((1 << FACE_VALID_SHIFT) + (face << FACE_SHIFT));
             }
             if (range != RANGE_UNUSED) {
-                m_packedId += ((1 << RANGE_VALID_SHIFT) + (range<<FACE_SHIFT));
+                m_packedId += ((1 << RANGE_VALID_SHIFT) + 
+                               (range<<RANGE_SHIFT));
             }
         };
     };
