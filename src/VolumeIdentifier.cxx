@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/VolumeIdentifier.cxx,v 1.1 2001/12/15 10:37:26 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/VolumeIdentifier.cxx,v 1.2 2001/12/15 11:05:15 riccardo Exp $
 
 #include "idents/VolumeIdentifier.h"
 
@@ -22,6 +22,9 @@ std::string VolumeIdentifier::name(const char* delimiter) const
 #endif
     s << delimiter;
     std::copy(begin(),end(), std::ostream_iterator<unsigned int>(s,delimiter));
+#ifndef WIN32
+    s << '\0';
+#endif
     std::string tmp=s.str();
     return tmp.substr(0,tmp.size()-1);
 }
