@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 14 14:18:33 PDT 2004
+idents/src/test
+
+Modified Files:
+	test_idents.cxx 
+Log Message:
+Add something to test program for new CalXtalId constructor.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 14 14:18:00 PDT 2004
 idents/src
 
