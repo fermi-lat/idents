@@ -1,0 +1,10 @@
+------------------------------------------------------------
+User: heather  Fri Mar  9 15:07:29 PST 2001
+idents/idents ScintillatorId.h
+
+Modified Files:
+	ScintillatorId.h 
+Log Message:
+Last version of ScintillatorId before renaming to AcdId.
+This version implements the new AcdId numbering scheme.
+    *
