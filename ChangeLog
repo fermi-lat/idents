@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 17 14:38:42 PDT 2004
+idents/src
+
+Added Files:
+	TkrId.cxx 
+Log Message:
+New class featuring constructor with VolumeIdentifier arg.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jun 17 14:38:16 PDT 2004
 idents/idents
 
