@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Oct 21 11:14:51 PDT 2004
+idents/idents
+
+Modified Files:
+	AcdId.h 
+Log Message:
+add exception if invalid volId for ACD
+    *
+------------------------------------------------------------
 User: heather  Thu Oct 21 11:12:57 PDT 2004
 idents/doc
 
