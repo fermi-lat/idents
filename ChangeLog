@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jan  8 13:36:12 PST 2002
+idents/src
+
+Modified Files:
+	VolumeIdentifier.cxx 
+Log Message:
+fix for gcc
+    *
+------------------------------------------------------------
 User: riccardo  Sat Dec 15 03:05:15 PST 2001
 idents/src
 
