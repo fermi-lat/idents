@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Sat Dec 15 03:05:15 PST 2001
+idents/idents
+
+Modified Files:
+	VolumeIdentifier.h 
+Log Message:
+Changed VolumeIdentifier to compe with Linux problems with sstream class
+    *
+------------------------------------------------------------
 User: burnett  Sat Dec 15 02:37:27 PST 2001
 idents/src
 
