@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Tue Mar 26 14:26:13 PST 2002
+idents/idents
+
+Modified Files:
+	CalLogId.h 
+Log Message:
+remove Gaudi inhweritance, add operator int()
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar 21 20:45:36 PST 2002
 idents/src
 
