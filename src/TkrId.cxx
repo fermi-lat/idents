@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/TkrId.cxx,v 1.3 2004/08/20 18:40:46 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/TkrId.cxx,v 1.5 2004/08/26 23:35:25 cohen Exp $
 //
 // ClassName:   TkrId
 //  
@@ -78,7 +78,7 @@ void TkrId::constructorGuts(const VolumeIdentifier& vId)   {
       (vId[fTowerObjects] != eTowerTKR)) {
     throw std::invalid_argument("VolumeIdentifier");
   }
-  if ((vId[fTowerY] > 4) || (vId[fTowerX] > 4)) 
+  if ((vId[fTowerY] > 3) || (vId[fTowerX] > 3)) 
     throw std::invalid_argument("VolumeIdentifier");
   m_packedId = (vId[fTowerY] << SHIFTTowerY) + (vId[fTowerX] << SHIFTTowerX);
   m_packedId |= VALIDTowerY + VALIDTowerX;
