@@ -16,7 +16,7 @@
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.7 2002/06/09 14:51:50 burnett Exp $
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.8 2002/09/04 18:59:23 heather Exp $
  */
 
 namespace idents{
@@ -70,8 +70,32 @@ public:
 	   || (m_value==id.getValue() && (m_size < id.size()));
       }
 
+    /// return true iff VolumeIdentifier fields say "tracker"
+    bool isTkr() {return ( (m_size > (int) fTowerObj) &&
+                           ( (*this)[fLATObj] == eLATTowers) &&
+                           ( (*this)[fTowerObj] == eTowerTKR)  ); }
+
+
+    /// return true iff VolumeIdentifier fields say "calorimeter"
+    bool isCal() {return ( (m_size > (int) fTowerObj) &&
+                           ( (*this)[fLATObj] == eLATTowers) &&
+                           ( (*this)[fTowerObj] == eTowerCAL)  ); }
+
+    /// return true iff VolumeIdentifier fields say "ACD"
+    bool isAcd() {return ((m_size > (int) fLATObj) && 
+                          ((*this)[fLATObj] == eLATACD)); }
                                                        
 private:
+
+    /// The following values must correspond with those defined 
+    /// in the xml geometry files in use when the VolumeIdentifier 
+    /// was created, or the is.. routines above will lie.
+    static const unsigned fLATObj = 0;
+    static const unsigned fTowerObj = 3;
+    static const unsigned eLATTowers = 0;
+    static const unsigned eLATACD   = 1;
+    static const unsigned eTowerCAL = 0;
+    static const unsigned eTowerTKR = 1;
 
     /// internal rappresentation of the volume identifier
     int64 m_value; // for sorting
