@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Oct 21 11:20:45 PDT 2004
+idents/src
+
+Added Files:
+	AcdId.cxx 
+Log Message:
+use exception if invalid volId is passed to ctor
+    *
+------------------------------------------------------------
 User: heather  Thu Oct 21 11:14:51 PDT 2004
 idents/idents
 
