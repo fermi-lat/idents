@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Mon Apr  9 10:12:38 PDT 2001
+idents/idents TowerId.h
+
+Modified Files:
+	TowerId.h 
+Log Message:
+Replaced dereference with an explicit method to access id.
+
+    *
+------------------------------------------------------------
 User: tlindner  Mon Apr  9 09:47:09 PDT 2001
 idents/idents TowerId.h
 
