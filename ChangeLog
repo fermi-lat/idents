@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 11 11:35:27 PDT 2004
+idents/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add new method to AcdId::checkVolId
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct  8 17:30:40 PDT 2004
 idents/src
 
