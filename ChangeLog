@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Thu Mar 21 10:48:49 PST 2002
+idents/idents
+
+Modified Files:
+	GlastAxis.h 
+Log Message:
+For completeness, added the enumeration "XY" for when both axes 
+are being considered (for example a bilayer pair of strips).
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Mar 15 11:06:16 PST 2002
 idents/doc
 
