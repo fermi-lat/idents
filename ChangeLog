@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: frailis  Thu Mar  7 08:27:16 PST 2002
+idents/src
+
+Modified Files:
+	VolumeIdentifier.cxx 
+Log Message:
+Reimplemented VolumeIdentifier class
+
+    *
+------------------------------------------------------------
+User: frailis  Thu Mar  7 08:27:16 PST 2002
 idents/idents
 
 Modified Files:
