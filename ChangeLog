@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat May 11 11:44:23 PDT 2002
+idents/idents
+
+Modified Files:
+	AcdId.h TowerId.h 
+Log Message:
+remove obsolete, and unused include
+    *
+------------------------------------------------------------
 User: burnett  Fri May 10 14:42:09 PDT 2002
 idents/idents
 
