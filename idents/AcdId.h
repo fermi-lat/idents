@@ -40,7 +40,7 @@
  @endverbatim
 
   @author Heather Kelly based on initial version by Sawyer Gillespie
-  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.8 2002/12/31 17:48:55 heather Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.9 2003/10/30 13:09:09 cohen Exp $
 */
 
 namespace idents {
@@ -53,6 +53,10 @@ public:
     AcdId (short l, short f, short r, short c);
     AcdId (short ribOrient, short ribbonNum);
     virtual ~AcdId ();
+
+    /// Allows user to check a volumeId to see if it is a valid tile or ribbon
+    /// before attempting to convert it to an AcdId
+    static bool checkVolId(const idents::VolumeIdentifier &volId);
 
     /// access the internal representation of the AcdId
     operator const unsigned int& () const { return m_id; }
@@ -133,6 +137,7 @@ inline AcdId::AcdId ( const AcdId& r ) : m_id (r.m_id) {}
 inline AcdId::AcdId (const idents::VolumeIdentifier &volId) {
     m_id = 0;
     layer(0);
+    if (!checkVolId(volId)) return;
     if (volId[0] != 1) return;
     if (volId[2] == tileVolId) {
         face(volId[1]);
@@ -161,6 +166,13 @@ inline AcdId::AcdId(short ribbonOrient, short r) {
     ribbonOrientation(ribbonOrient);
 }
 inline AcdId::~AcdId () {}
+
+
+inline bool AcdId::checkVolId(const idents::VolumeIdentifier &volId) {
+    if (volId[0] != 1) return false;
+    if ((volId[2] != tileVolId) || (volId[2] != ribbonVolId)) return false;
+    return true;
+}
 
 inline unsigned int AcdId::id() const 
 { 
