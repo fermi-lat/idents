@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jun 13 07:23:19 PDT 2002
+idents/src
+
+Modified Files:
+	VolumeIdentifier.cxx 
+Log Message:
+fix mask to work, and avoid gcc error coming
+    *
+------------------------------------------------------------
 User: burnett  Sun Jun  9 08:17:21 PDT 2002
 idents/src
 
