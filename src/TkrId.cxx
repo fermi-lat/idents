@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/TkrId.cxx,v 1.2 2004/08/09 17:57:14 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/TkrId.cxx,v 1.3 2004/08/20 18:40:46 jrb Exp $
 //
 // ClassName:   TkrId
 //  
@@ -39,7 +39,7 @@ TkrId::TkrId(const VolumeIdentifier& vId) : m_packedId(0) {
  argument, analysis code.
 */
 TkrId::TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top,
-             int view) {
+             int view,bool botTray) {
   m_packedId = (towerX << SHIFTTowerX) + (towerY << SHIFTTowerY) +
     (tray << SHIFTTray);
   if (top) m_packedId |= (1 << SHIFTBotTop);
@@ -48,6 +48,7 @@ TkrId::TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top,
   if ((view == eMeasureX) || (view == eMeasureY) ) {
     m_packedId |= ( (view << SHIFTMeas) | VALIDMeas);
   }
+  m_packedId |= (botTray << SHIFTBottom) | VALIDBottom;
 }
 
 // the inserter; expect at most diagnostic use
