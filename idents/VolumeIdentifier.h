@@ -16,7 +16,7 @@
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header:\$
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.4 2002/03/08 23:05:53 burnett Exp $
  */
 
 namespace idents{
@@ -38,7 +38,7 @@ public:
      * and is used by the overloaded operator<< to build an identifier reading from
      * a persistent data store
      */
-    init(int64 , unsigned int); 
+    void init(int64 , unsigned int); 
 
     /// prepend, in front, another id
     void prepend( const VolumeIdentifier& id);
