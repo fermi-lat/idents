@@ -7,7 +7,7 @@
  * @brief Provides a single source for the GLAST axis definition
  *
  * The class provides a GLAST-wide definition for the axes X and Y,
- * and one for when the concept of axis doesn't apply.
+ * both X and Y, and one for when the concept of axis doesn't apply.
  *
  * Each subsystem should use this class when designation of an
  * axis is required, but how the axis is used will vary with the
@@ -28,7 +28,7 @@
 
  * @author Leon Rochester
  *
- * $Header$
+ * $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/GlastAxis.h,v 1.1 2002/01/30 01:18:37 lsrea Exp $
  */
 
 namespace idents {
@@ -37,7 +37,7 @@ namespace idents {
 	{
 	public:
 		
-		enum axis {X, Y, NONE};		
+		enum axis {X, Y, XY, NONE};		
 	};
 	
 }
