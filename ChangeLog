@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct  8 17:30:40 PDT 2004
+idents/src
+
+Modified Files:
+	CalXtalId.cxx 
+Log Message:
+Support for optional Face and Range (really range+diode) fields
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct  8 17:30:26 PDT 2004
 idents/idents
 
