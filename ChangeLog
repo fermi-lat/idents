@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Sun Jan  2 23:02:12 PST 2005
+idents/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+prepare for tag v2r12p2: back to tag v2r12, after Joanne's mods to CalibData
+
+    *
+------------------------------------------------------------
+User: lsrea  Sun Jan  2 23:02:12 PST 2005
 idents/cmt
 
 Modified Files:
