@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Sat Jun  9 17:22:52 PDT 2001
+idents/cmt .cvsignore cleanup.csh cleanup.sh
+
+Modified Files:
+	.cvsignore 
+Removed Files:
+	cleanup.csh cleanup.sh 
+Log Message:
+fix cmt folder
+    *
+------------------------------------------------------------
 User: igable  Thu May  3 15:39:44 PDT 2001
 idents/cmt setup.bat setup.csh setup.sh
 
