@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Nov  7 13:48:22 PST 2002
+idents/idents
+
+Modified Files:
+	AcdId.h 
+Log Message:
+Handle new-style ACD tile volume identifiers
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Nov  7 13:46:34 PST 2002
 idents/cmt
 
