@@ -3,6 +3,7 @@
 
 #include "facilities/bitmanip.h"
 #include "idents/VolumeIdentifier.h"
+#include <iostream>
 
 /** @class AcdId 
 @brief Encapsulate the id for an ACD tile.
@@ -39,7 +40,7 @@
  @endverbatim
 
   @author Heather Kelly based on initial version by Sawyer Gillespie
-  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.7 2002/12/30 20:35:23 heather Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.8 2002/12/31 17:48:55 heather Exp $
 */
 
 namespace idents {
