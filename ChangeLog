@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec  9 00:00:49 PST 2004
+idents/idents
+
+Modified Files:
+	TkrId.h 
+Log Message:
+Need default constructor to be public for TCDS ToT classes
+
+    *
+------------------------------------------------------------
 User: heather  Thu Oct 21 11:24:15 PDT 2004
 idents/src/test
 
