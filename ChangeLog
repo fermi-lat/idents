@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: frailis  Mon Apr 29 04:06:44 PDT 2002
+idents/src/test
+
+Modified Files:
+	test_idents.cxx 
+Log Message:
+Added some "std::" forgotten in the test source (Linux doesn't complaint about it)
+
+    *
+------------------------------------------------------------
 User: frailis  Fri Apr 26 01:50:03 PDT 2002
 idents/src/test
 
