@@ -15,7 +15,7 @@ namespace idents {
 *  sufficiently; that is, if fields of interest are moved.
 * @author  J. Bogart
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.6 2004/10/01 19:39:15 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.7 2004/12/09 08:00:49 jrb Exp $
 */
   class VolumeIdentifier;
 
@@ -33,11 +33,13 @@ namespace idents {
         silicon plane (view optional)     */
     TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top, 
           int view=eMeasureNone);
-            
+
+    TkrId(const TkrId& id) : m_packedId(id.m_packedId) {}
     TkrId() : m_packedId(0) {};
 
     ~TkrId() {};
 
+    void copy(const TkrId& id) {m_packedId = id.m_packedId;}
     bool isEqual(const TkrId& other) {
       return ((m_packedId == other.m_packedId));
     }
