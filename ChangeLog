@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Mar 12 06:51:47 PST 2001
+idents/idents AcdId.h
+
+Added Files:
+	AcdId.h 
+Log Message:
+Renaming ScintillatorId to AcdId
+    *
+------------------------------------------------------------
 User: heather  Fri Mar  9 15:07:29 PST 2001
 idents/idents ScintillatorId.h
 
