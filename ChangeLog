@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: igable  Sun Jul 15 14:58:30 PDT 2001
+idents/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+headers pattern
+    *
+------------------------------------------------------------
 User: burnett  Sat Jun  9 17:22:52 PDT 2001
 idents/cmt .cvsignore cleanup.csh cleanup.sh
 
