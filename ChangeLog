@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Oct  1 12:39:15 PDT 2004
+idents/idents
+
+Modified Files:
+	TkrId.h 
+Log Message:
+Modified TkrId, includes two methods getLayer and getPlane which will be replaced soon, also includes an operator definition for comparing two TkrIds
+    *
+------------------------------------------------------------
 User: cohen  Thu Aug 26 16:35:25 PDT 2004
 idents/src
 
