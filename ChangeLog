@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:57:14 PDT 2004
+idents/src
+
+Modified Files:
+	TkrId.cxx 
+Log Message:
+Reorganize somewhat for CalibData use
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 10:57:00 PDT 2004
 idents/idents
 
