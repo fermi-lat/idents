@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sun Jan  2 15:46:26 PST 2005
+idents/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+prepare for tag v2r12: remove getLayer() and getPlane()
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r11p6, operation: add
 Package: idents
