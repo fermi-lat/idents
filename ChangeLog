@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Thu Oct 30 05:09:10 PST 2003
+idents/idents
+
+Modified Files:
+	AcdId.h 
+Log Message:
+added iostream
+    *
+------------------------------------------------------------
 User: hansl  Fri Aug  8 11:20:57 PDT 2003
 idents/doc
 
