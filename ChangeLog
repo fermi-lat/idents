@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Sep  4 12:00:14 PDT 2002
+idents/src
+
+Modified Files:
+	VolumeIdentifier.cxx 
+Log Message:
+provide const operator[]
+    *
+------------------------------------------------------------
 User: heather  Wed Sep  4 11:59:23 PDT 2002
 idents/idents
 
