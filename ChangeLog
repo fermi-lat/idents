@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 14 14:17:45 PDT 2004
+idents/idents
+
+Modified Files:
+	CalXtalId.h 
+Log Message:
+New constructor with VolumeIdentifier argument
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr 20 07:29:41 PDT 2004
 idents/doc
 
