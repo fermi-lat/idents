@@ -16,7 +16,7 @@
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.5 2002/03/22 04:45:36 burnett Exp $
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.6 2002/04/26 08:50:03 frailis Exp $
  */
 
 namespace idents{
@@ -55,7 +55,7 @@ public:
     int size() const { return m_size;}
 
     /// return a name made up with slash delimiters
-    std::string name(const char* delimiter="/")const ;
+    std::string name(const char * delimiter="/")const ;
  
     /// access single ids which constitute the volume identifier
     unsigned int operator[](unsigned int);
