@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Fri Aug 20 11:40:46 PDT 2004
+idents/src/test
+
+Modified Files:
+	test_idents.cxx 
+Log Message:
+Add new optional argument to TkrId constructor for View
+Add Windows binary directories to .cvsignore
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Aug 20 11:40:46 PDT 2004
 idents/src
 
 Modified Files:
