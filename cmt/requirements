@@ -1,5 +1,5 @@
 package idents
-# $Header: /nfs/slac/g/glast/ground/cvs/idents/cmt/requirements,v 1.8 2002/03/22 04:45:36 burnett Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/idents/cmt/requirements,v 1.9 2002/04/03 01:16:36 burnett Exp $
 version v2r5
 
 use GlastPolicy
@@ -9,3 +9,5 @@ apply_pattern package_headers
 apply_pattern package_linkopts
 
 library idents -no_share *.cxx ${idents_headers}
+
+application test test/test_idents.cxx
