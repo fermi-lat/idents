@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 11 11:36:05 PDT 2004
+idents/idents
+
+Modified Files:
+	AcdId.h 
+Log Message:
+add new method to AcdId::checkVolId
+    *
+------------------------------------------------------------
 User: heather  Mon Oct 11 11:35:36 PDT 2004
 idents/doc
 
