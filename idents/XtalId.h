@@ -8,7 +8,7 @@ namespace idents {
 /**
 *  Crystal identifier
 *
-*  @version $Id: XtalId.h,v 1.2 2000/08/17 15:13:33 burnett Exp $
+*  @version $Id: XtalId.h,v 1.1.1.1 2000/12/11 16:36:17 burnett Exp $
 */
 
 class XtalId 
@@ -29,6 +29,11 @@ public:
     {  return m_id*1000+m_layer*100+m_xtal;
     }
     
+    //! access layer number
+    unsigned int layer()const{return m_layer;}
+    unsigned int xtal()const{return m_xtal;}
+    ModuleId id()const{return m_id;}
+
 private:
     unsigned int m_layer;
     unsigned int m_xtal;
