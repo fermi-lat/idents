@@ -16,7 +16,7 @@
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.6 2002/04/26 08:50:03 frailis Exp $
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.7 2002/06/09 14:51:50 burnett Exp $
  */
 
 namespace idents{
@@ -59,6 +59,9 @@ public:
  
     /// access single ids which constitute the volume identifier
     unsigned int operator[](unsigned int);
+    
+    /// access single ids which constitute the volume identifier
+    unsigned int operator[](unsigned int) const;
     
     /// overload the < operator for correct sorting of volume identifiers
     bool operator<(const VolumeIdentifier& id)const
