@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 17 14:38:16 PDT 2004
+idents/idents
+
+Modified Files:
+	VolumeIdentifier.h mainpage.h 
+Added Files:
+	TkrId.h 
+Log Message:
+VolumeIdentifier.h   add boolean methods isTkr(), isCal(), isAcd()
+TkrId.h              new class featuring constructor with VolumeIdentifier arg.
+mainpage.h           keep pace with content of package
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 14 14:18:33 PDT 2004
 idents/src/test
 
