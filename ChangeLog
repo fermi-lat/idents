@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 14 14:18:00 PDT 2004
+idents/src
+
+Modified Files:
+	CalXtalId.cxx 
+Log Message:
+New constructor with VolumeIdentifier argument
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 14 14:17:45 PDT 2004
 idents/idents
 
