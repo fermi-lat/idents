@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 30 12:36:04 PST 2002
+idents/src/test
+
+Modified Files:
+	test_idents.cxx 
+Log Message:
+add a couple checks on AcdId to test
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 30 12:35:23 PST 2002
 idents/idents
 
