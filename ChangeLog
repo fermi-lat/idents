@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Fri Mar 16 06:38:06 PST 2001
+idents/idents ModuleId.h
+
+Modified Files:
+	ModuleId.h 
+Log Message:
+Fix X and Y indices to go from 0..3 instead of 1..4
+
+    *
+------------------------------------------------------------
 User: heather  Mon Mar 12 06:51:47 PST 2001
 idents/idents AcdId.h
 
