@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Sat Dec 15 02:37:26 PST 2001
+idents/idents
+
+Added Files:
+	VolumeIdentifier.h 
+Log Message:
+New class to manage a list of unsigned ints representing a volume identifier
+Since it has an implementation, needs to define a library
+
+    *
+------------------------------------------------------------
+User: burnett  Sat Dec 15 02:37:26 PST 2001
 idents/cmt
 
 Modified Files:
