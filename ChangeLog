@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Sat Nov 16 14:25:13 PST 2002
+idents/idents
+
+Modified Files:
+	CalXtalId.h 
+Log Message:
+add enum for diode type and isX() function
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 13 10:30:46 PST 2002
 idents/doc
 
