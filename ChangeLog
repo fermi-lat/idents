@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 15 10:37:25 PDT 2004
+idents/idents
+
+Modified Files:
+	CalXtalId.h 
+Log Message:
+1. Bug fix in constructor 
+2. Add static function to return diode, given adcRange
+
+    *
+------------------------------------------------------------
 User: heather  Mon Oct 11 11:36:05 PDT 2004
 idents/idents
 
