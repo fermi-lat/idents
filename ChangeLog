@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: frailis  Fri Apr 26 01:50:03 PDT 2002
+idents/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Overloaded the < operator to use ids with maps. Operator int64() substituted with a getValue() method. Added a little test program.
+    *
+------------------------------------------------------------
 User: frailis  Fri Apr 26 01:41:09 PDT 2002
 idents/src/test
 
