@@ -15,7 +15,7 @@ namespace idents {
 *  sufficiently; that is, if fields of interest are moved.
 * @author  J. Bogart
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.1 2004/06/17 21:38:16 jrb Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.2 2004/08/09 17:57:00 jrb Exp $
 */
   class VolumeIdentifier;
 
@@ -29,7 +29,11 @@ namespace idents {
         and nesting of volumes in xml geometry description
     */
     TkrId(const VolumeIdentifier& vId);
-    TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top);
+    /** constructor including just enough information to identify 
+        silicon plane (view optional)
+    */
+    TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top, 
+          int view=eMeasureNone);
             
     ~TkrId() {};
 
@@ -54,7 +58,8 @@ namespace idents {
     enum
       {
         eMeasureX = 0,
-        eMeasureY = 1
+        eMeasureY = 1,
+        eMeasureNone = 2
       };
         
   private:

@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/TkrId.cxx,v 1.1 2004/06/17 21:38:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/TkrId.cxx,v 1.2 2004/08/09 17:57:14 jrb Exp $
 //
 // ClassName:   TkrId
 //  
@@ -35,14 +35,19 @@ TkrId::TkrId(const VolumeIdentifier& vId) : m_packedId(0) {
 
 /** 
  Simple alternate constructor when all we care about is the plane. 
- Designed for use with calibration data.
+ Designed for use with calibration data or, with optional view
+ argument, analysis code.
 */
-TkrId::TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top) {
+TkrId::TkrId(unsigned towerX, unsigned towerY, unsigned tray, bool top,
+             int view) {
   m_packedId = (towerX << SHIFTTowerX) + (towerY << SHIFTTowerY) +
     (tray << SHIFTTray);
   if (top) m_packedId |= (1 << SHIFTBotTop);
   m_packedId |=   (VALIDTowerY + VALIDTowerX + 
                    VALIDTray + VALIDBotTop);
+  if ((view == eMeasureX) || (view == eMeasureY) ) {
+    m_packedId |= ( (view << SHIFTMeas) | VALIDMeas);
+  }
 }
 
 // the inserter; expect at most diagnostic use

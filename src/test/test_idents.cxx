@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/test/test_idents.cxx,v 1.4 2004/06/14 21:18:33 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/test/test_idents.cxx,v 1.5 2004/06/17 21:39:12 jrb Exp $
 
 
 #include "idents/VolumeIdentifier.h"
@@ -169,6 +169,25 @@ int main()
   unsigned botTop = 0;  // bottom
   unsigned ladder = 1;
   unsigned wafer = 2;
+
+  bool isTop = (botTop == 1);
+  idents::TkrId noView(xNum, yNum, tray, isTop);
+  idents::TkrId withViewX(xNum, yNum, tray, isTop, idents::TkrId::eMeasureX);
+  idents::TkrId withViewY(xNum, yNum, tray, isTop, idents::TkrId::eMeasureY);
+  idents::TkrId withViewBad(xNum, yNum, tray, isTop, 17);
+
+  std::cout << "For noView validity of view is " << noView.hasView() 
+            << std::endl;
+  std::cout << "For withViewX validity of view is " << withViewX.hasView() 
+            << " and view is " << withViewX.getView() << std::endl;
+  std::cout << "For withViewY validity of view is " << withViewY.hasView() 
+            << " and view is " << withViewY.getView() << std::endl;
+
+  std::cout << "For withViewBad validity of view is " << withViewBad.hasView() 
+            << std::endl;
+
+
+
 
   vIdTkr.append(0); vIdTkrTrunc.append(0);        // LATobject = towers
   vIdTkr.append(yNum); vIdTkrTrunc.append(yNum);
