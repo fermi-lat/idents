@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: frailis  Thu Mar  7 08:27:16 PST 2002
+idents/idents
+
+Modified Files:
+	VolumeIdentifier.h 
+Log Message:
+Reimplemented VolumeIdentifier class
+
+    *
+------------------------------------------------------------
 User: lsrea  Tue Jan 29 17:18:37 PST 2002
 idents/idents
 
