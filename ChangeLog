@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jun  9 07:51:50 PDT 2002
+idents/idents
+
+Modified Files:
+	TowerId.h VolumeIdentifier.h 
+Log Message:
+remove warnings
+    *
+------------------------------------------------------------
 User: burnett  Sat May 11 15:51:09 PDT 2002
 idents/doc
 
