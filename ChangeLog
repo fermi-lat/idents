@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Mar 20 12:52:41 PST 2001
+idents/idents ModuleId.h
+
+Modified Files:
+	ModuleId.h 
+Log Message:
+restore ModuleId to AO convention
+    *
+------------------------------------------------------------
 User: lsrea  Fri Mar 16 06:38:06 PST 2001
 idents/idents ModuleId.h
 
