@@ -15,7 +15,7 @@ namespace idents {
 *  sufficiently; that is, if fields of interest are moved.
 * @author  J. Bogart
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.8 2004/12/15 18:37:31 jrb Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/TkrId.h,v 1.9 2005/01/02 23:46:26 lsrea Exp $
 */
   class VolumeIdentifier;
 
@@ -168,8 +168,8 @@ namespace idents {
     }
 
     //Access Methods for Tkr reconstruction semantics:
-    //unsigned int getLayer() const {return ( getPlane())/2;}
-    //unsigned int getPlane() const {return 2*getTray() + getBotTop() - 1;}
+    unsigned int getLayer() const {return ( getPlane())/2;}
+    unsigned int getPlane() const {return 2*getTray() + getBotTop() - 1;}
 
     /// Number of valid fields, never more than 7
     //    unsigned int getSize();
