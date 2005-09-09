@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/AcdId.cxx,v 1.5 2004/08/26 23:35:25 cohen Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/AcdId.cxx,v 1.1 2004/10/21 18:20:45 heather Exp $
 //
 // ClassName:   AcdId
 //  
@@ -25,7 +25,7 @@ AcdId::AcdId(const VolumeIdentifier& vId) : m_id(0) {
 
 void AcdId::constructorGuts(const VolumeIdentifier& volId)   {
 
-    layer(0);
+    na(0);
     if (!checkVolId(volId)) throw std::invalid_argument("VolumeIdentifier");
 
     if (volId[2] == tileVolId) {
