@@ -16,7 +16,7 @@
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.8 2002/09/04 18:59:23 heather Exp $
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.9 2004/06/17 21:38:16 jrb Exp $
  */
 
 namespace idents{
@@ -69,6 +69,11 @@ public:
          return (m_value < id.getValue())
 	   || (m_value==id.getValue() && (m_size < id.size()));
       }
+  
+    bool operator==(const VolumeIdentifier& id)const
+    {
+        return ((m_value == id.getValue()) && (m_size==id.size()));
+    }
 
     /// return true iff VolumeIdentifier fields say "tracker"
     bool isTkr() {return ( (m_size > (int) fTowerObj) &&
