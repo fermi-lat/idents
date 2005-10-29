@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Oct 29 00:44:58 PDT 2005
+idents/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add == operator to VolId
+    *
+------------------------------------------------------------
 User: heather  Sat Oct 29 00:44:43 PDT 2005
 idents/doc
 
