@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Oct 29 00:44:08 PDT 2005
+idents/idents
+
+Modified Files:
+	VolumeIdentifier.h 
+Log Message:
+add == operator to VolId
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r14, operation: add
 Package: idents
