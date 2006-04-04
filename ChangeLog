@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr  4 16:05:15 PDT 2006
+idents/idents
+
+Added Files:
+	AcdGapId.h 
+Log Message:
+added AcdGapId
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r15, operation: add
 Package: idents
