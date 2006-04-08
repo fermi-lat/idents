@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sat Apr  8 14:38:52 PDT 2006
+idents/idents
+
+Modified Files:
+	AcdId.h 
+Log Message:
+Add a few more 'get' functions for use of CalibData package
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r16, operation: add
 Package: idents
