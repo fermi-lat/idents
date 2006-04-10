@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/AcdId.cxx,v 1.1 2004/10/21 18:20:45 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/AcdId.cxx,v 1.2 2005/09/09 20:21:05 heather Exp $
 //
 // ClassName:   AcdId
 //  
@@ -10,6 +10,7 @@
 
 // Include files
 #include "idents/AcdId.h"
+#include "facilities/Util.h"
 #include <stdexcept>
 #include <iostream>
 #include <ios>
@@ -42,8 +43,25 @@ void AcdId::constructorGuts(const VolumeIdentifier& volId)   {
         ribbonOrientation(6-volId[3]);
     }
 
-
 }
+AcdId::AcdId(const std::string& base10) {
+  // Following may throw an exception
+  int b10 = facilities::Util::stringToInt(base10);
+
+  m_id = 0;
+  na(b10/1000);
+  b10 = b10 % 1000;
+  face(b10/100);
+  b10 = b10 % 100;
+  if (na() ) column(b10);
+  else {
+    row(b10/10);
+    b10 = b10 % 10;
+    column(b10);
+  }
+}
+
+  
 
 
 
