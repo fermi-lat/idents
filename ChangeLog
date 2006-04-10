@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Sun Apr  9 22:12:15 PDT 2006
+idents/src
+
+Modified Files:
+	AcdId.cxx 
+Log Message:
+1. Add constructor with string input arg. like "213" for face 2, row 1, col 3
+2. Bug-fix for *like routines
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Apr  9 22:12:14 PDT 2006
 idents/idents
 
