@@ -42,7 +42,7 @@
  @endverbatim
 
   @author Heather Kelly based on initial version by Sawyer Gillespie
-  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.13 2006/04/08 21:38:52 jrb Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.14 2006/04/10 05:12:14 jrb Exp $
 */
 
 namespace idents {
@@ -93,7 +93,7 @@ public:
     /// access the id in matrix format LayerFaceRowColumn
     inline unsigned int id () const;
     /// construct a VolumeIdentifier using the AcdId
-    inline const idents::VolumeIdentifier volId();
+    inline const idents::VolumeIdentifier volId(bool bent=false);
     /// is this a tile?
     inline bool tile() const;
     /// is this a ribbon?
@@ -201,7 +201,7 @@ inline unsigned int AcdId::id() const
     return (na() * 1000 + ribbonOrientation() * 100 + ribbonNum());
 }
 
-inline const idents::VolumeIdentifier AcdId::volId() {
+inline const idents::VolumeIdentifier AcdId::volId(bool bent) {
 
     idents::VolumeIdentifier vId;
     vId.append(1); 
@@ -210,6 +210,10 @@ inline const idents::VolumeIdentifier AcdId::volId() {
         vId.append(tileVolId);
         vId.append(row());
         vId.append(column()); 
+        if (bent) // signifies the bent portion of the detector
+            vId.append(1);
+        else
+            vId.append(0);
     } else {
         vId.append(ribbonVolId);
         vId.append(6-ribbonOrientation());
