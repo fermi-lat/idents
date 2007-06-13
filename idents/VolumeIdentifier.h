@@ -16,7 +16,7 @@
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.9 2004/06/17 21:38:16 jrb Exp $
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.10 2005/10/29 07:44:08 heather Exp $
  */
 
 namespace idents{
@@ -89,6 +89,9 @@ public:
     /// return true iff VolumeIdentifier fields say "ACD"
     bool isAcd() {return ((m_size > (int) fLATObj) && 
                           ((*this)[fLATObj] == eLATACD)); }
+
+    /// Max allowed value for a single field
+    static unsigned maxFieldValue() { return s_maxFieldValue;}
                                                        
 private:
 
@@ -101,6 +104,15 @@ private:
     static const unsigned eLATACD   = 1;
     static const unsigned eTowerCAL = 0;
     static const unsigned eTowerTKR = 1;
+
+    static const unsigned s_bitsPer = 6;
+
+    // Since 64 is not evenly divisible by bitsPer (6)  field
+    // occupying most significant bits is located in bits 54-59.  
+    // Top 4 bits are unused.
+    static const unsigned s_maxSize = 64 / s_bitsPer;
+    static const unsigned s_maxShift = (s_maxSize - 1) * s_bitsPer;   /* 54 */
+    static const unsigned s_maxFieldValue = (1 << s_bitsPer) - 1;
 
     /// internal rappresentation of the volume identifier
     int64 m_value; // for sorting
