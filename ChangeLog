@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Aug 23 21:30:31 PDT 2007
+idents/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+avoid VolId construction for ACD NA
+    *
+------------------------------------------------------------
+User: heather  Thu Aug 23 21:30:31 PDT 2007
 idents/cmt
 
 Modified Files:
