@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Aug 23 21:30:31 PDT 2007
+idents/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+avoid VolId construction for ACD NA
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r19, operation: add
 Package: idents
