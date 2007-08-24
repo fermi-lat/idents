@@ -42,7 +42,7 @@
  @endverbatim
 
   @author Heather Kelly based on initial version by Sawyer Gillespie
-  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.14 2006/04/10 05:12:14 jrb Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.15 2006/05/10 20:41:43 heather Exp $
 */
 
 namespace idents {
@@ -205,6 +205,7 @@ inline const idents::VolumeIdentifier AcdId::volId(bool bent) {
 
     idents::VolumeIdentifier vId;
     vId.append(1); 
+    if (na()) return vId;
     vId.append(face()); 
     if (tile()) {
         vId.append(tileVolId);
