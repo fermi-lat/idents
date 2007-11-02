@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kocian  Fri Nov  2 11:48:51 PDT 2007
+idents/src
+
+Modified Files:
+	AcdId.cxx 
+Log Message:
+added ACD conversion functions
+    *
+------------------------------------------------------------
 User: kocian  Fri Nov  2 11:48:50 PDT 2007
 idents/idents
 
