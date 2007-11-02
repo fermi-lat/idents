@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: kocian  Fri Nov  2 11:48:50 PDT 2007
+idents/idents
+
+Modified Files:
+	AcdId.h 
+Added Files:
+	AcdConv.h 
+Log Message:
+added ACD conversion functions
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r19p1, operation: add
 Package: idents
