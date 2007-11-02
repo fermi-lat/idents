@@ -42,7 +42,7 @@
  @endverbatim
 
   @author Heather Kelly based on initial version by Sawyer Gillespie
-  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.15 2006/05/10 20:41:43 heather Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/idents/idents/AcdId.h,v 1.16 2007/08/24 04:30:31 heather Exp $
 */
 
 namespace idents {
@@ -128,6 +128,14 @@ public:
 
     /// Allow client to set the na bit
     inline void na( unsigned int val );
+
+    static void convertToTilePmt(unsigned int  cable, unsigned int  channel, unsigned int& tile, unsigned int& pmt);
+    static void convertToGarcGafe(unsigned int tile, unsigned int pmt, unsigned int& garc, unsigned int& gafe);
+    static unsigned int           tileFromGemIndex(unsigned int gemIndex);
+    static unsigned int           gemIndexFromTile(unsigned int tile);
+    static unsigned int           tileFromIndex(unsigned int gemIndex);
+    static unsigned int           indexFromTile(unsigned int tile);
+
 
 private:
     void constructorGuts(const idents::VolumeIdentifier &volid);
