@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: fewtrell  Tue Jan 22 12:22:14 PST 2008
+idents/idents
+
+Modified Files:
+	VolumeIdentifier.h 
+Log Message:
+added some harmless const qualifiers, allows to use safe const */& with VolumeIdentifier
+
+    *
+------------------------------------------------------------
+User: fewtrell  Tue Jan 22 12:22:14 PST 2008
 idents/doc
 
 Modified Files:
