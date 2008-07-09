@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Jul  9 14:13:47 PDT 2008
+GlastRelease-scons/idents
+
+Added Files:
+	SConscript identsLib.py 
+Log Message:
+Added SConscript files to packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: idents-02-20-01, operation: add
 Package: idents
