@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov 21 14:48:57 PST 2008
+idents/idents
+
+Modified Files:
+	CalXtalId.h VolumeIdentifier.h 
+Log Message:
+Add routine to CalXtalId.cxx to produce VolumeIdentifier from Xtal id
+Fix end-of-line in VolumeIdentifier.h 
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:22:47 PDT 2008
 GlastRelease-scons/idents
 
