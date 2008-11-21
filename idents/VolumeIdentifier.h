@@ -9,14 +9,14 @@
  *
  * @brief This class encapsulates volume identifiers.
  *
- * This class encapsulates volume identifiers defined in the xml files describing 
- * the detector. The volume identifiers are transformed into a 64 bit integer for 
- * efficiency purpose.
+ * This class encapsulates volume identifiers defined in the xml files 
+ * describing the detector. The volume identifiers are transformed into a 
+ * 64 bit integer for efficiency purpose.
  *  
  * @author Toby Burnett
  * @author Marco Frailis
  *    
- * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.11 2007/06/13 22:02:53 jrb Exp $
+ * \$Header: /nfs/slac/g/glast/ground/cvs/idents/idents/VolumeIdentifier.h,v 1.12 2008/01/22 20:22:14 fewtrell Exp $
  */
 
 namespace idents{
@@ -34,9 +34,9 @@ public:
     VolumeIdentifier();
 
     /** 
-     * This method initialize the VolumeIdentifier with a 64 bit integer and a size
-     * and is used by the overloaded operator<< to build an identifier reading from
-     * a persistent data store
+     * This method initialize the VolumeIdentifier with a 64 bit integer 
+     * and a size and is used by the overloaded operator<< to build an 
+     * identifier reading from a persistent data store
      */
     void init(int64 , unsigned int); 
 

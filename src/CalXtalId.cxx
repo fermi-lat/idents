@@ -1,5 +1,5 @@
 // File and Version information
-// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/CalXtalId.cxx,v 1.4 2004/06/14 21:18:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/idents/src/CalXtalId.cxx,v 1.5 2004/10/09 00:30:40 jrb Exp $
 //
 // ClassName:   CalXtalId        
 //  
@@ -59,6 +59,43 @@ CalXtalId::CalXtalId(const VolumeIdentifier& vId, unsigned xNum) {
     if (vId[fTowerX] >= xNum) throw std::invalid_argument("xNum");
     short tower = xNum*vId[fTowerY] + vId[fTowerX];
     packId(tower, vId[fLayer], vId[fCALLog], FACE_UNUSED, RANGE_UNUSED);
+}
+
+/*
+  Meaning of vol id fields is  for CAL (see 
+http://www.slac.stanford.edu/exp/glast/ground/software/geometry/docs/identifiers/geoId-RitzId.shtml#cal)
+ is
+    fLATObjects (must be 0 = eLATTowers)
+    fTowerY     (range 0-3)
+    fTowerX     (range 0-3)
+    fTowerObjects (must be 0 = eTowerCAL)
+    fLayer      (range 0-7)
+    fMeasure      (0 for measures X, else 1)
+    fCALLog     (range 0-11)
+    fCellCmp    (0 for crystal, 1-4 for diodes)
+    fCALSeg     (for crystal if segments are defined in geometry)
+
+*/
+VolumeIdentifier* CalXtalId::makeVolumeId() const {
+  VolumeIdentifier* vid = new VolumeIdentifier;
+  vid->append(0);   // LATObjects
+  int fld = getTower();
+  int towerY = fld/4;
+  int towerX = fld - (4*towerY);
+  vid->append(towerY);
+  vid->append(towerX);
+  vid->append(0);       // towerCAL
+  fld = getLayer();
+  vid->append(fld);
+  if (isX()) {
+    vid->append(0);
+  } else {
+    vid->append(1);
+  }
+  fld = getColumn();
+  vid->append(fld);
+  vid->append(0);   // only return vid's for crystals
+  return vid;
 }
 
 // the inserter to stream unpacked tower, layer and column
