@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:40:36 PST 2008
+GlastRelease-scons/idents
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for idents v2r19p1 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 21 14:48:57 PST 2008
 idents/src/test
 
