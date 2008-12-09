@@ -2,6 +2,16 @@
 TAG
 Tag name: idents-02-19-01, operation: add
 Package: idents
+User: ecephas  Mon Dec  8 16:08:55 2008
+Files:
+  idents/identsLib.py  1.1
+  idents/identsLib.py  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: idents-02-19-01, operation: add
+Package: idents
 User: ecephas  Mon Dec  8 13:40:42 2008
 Files:
   idents/SConscript  1.3
