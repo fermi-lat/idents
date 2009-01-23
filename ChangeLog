@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+TAG
+Tag name: idents-02-20-01, operation: mov
+Package: idents
+User: glastrm  Thu Jan 22 16:31:56 2009
+Files:
+  idents/SConscript  1.4
+  idents/SConscript  1.4
+  idents/SConscript  1.4
+  idents/identsLib.py  1.1
+  idents/identsLib.py  1.1
+  idents/identsLib.py  1.1
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:07:47 PST 2009
 GlastRelease-scons/idents
 
