@@ -1,7 +1,7 @@
 # -*- python -*-
 # $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/idents/SConscript,v 1.2 2008/08/15 21:22:47 ecephas Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
-# Version: idents-02-19-01
+# Version: idents-02-20-01
 import os
 Import('baseEnv')
 Import('listFiles')
@@ -16,6 +16,7 @@ progEnv.Tool('identsLib')
 test_idents = progEnv.Program('test_idents',[ 'src/test/test_idents.cxx'])
 
 progEnv.Tool('registerObjects', package = 'idents', libraries = [identsLib], testApps = [test_idents], includes = listFiles(['idents/*.h']))
+
 
 
 
