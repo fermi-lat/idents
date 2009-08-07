@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  6 17:00:24 PDT 2009
+GlastRelease-scons/idents
+
+Modified Files:
+	SConscript 
+Log Message:
+Use registerTargets
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r19p1, operation: del
 Package: idents
