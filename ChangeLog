@@ -2,6 +2,19 @@
 TAG
 Tag name: idents-02-20-02, operation: add
 Package: idents
+User: jrb  Thu Sep 10 16:51:12 2009
+Files:
+  idents/src/VolumeIdentifier.cxx  1.14
+  idents/src/TkrId.cxx  1.6
+  idents/src/AcdId.cxx  1.4
+  idents/src/CalXtalId.cxx  1.6
+  idents/src/test/test_idents.cxx  1.8
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: idents-02-20-02, operation: add
+Package: idents
 User: jrb  Thu Sep 10 16:51:06 2009
 Files:
   idents/idents/blank.cxx  1.1
