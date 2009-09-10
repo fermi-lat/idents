@@ -2,6 +2,15 @@
 TAG
 Tag name: idents-02-20-02, operation: add
 Package: idents
+User: jrb  Thu Sep 10 16:51:00 2009
+Files:
+  idents/doc/release.notes  1.40
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: idents-02-20-02, operation: add
+Package: idents
 User: jrb  Thu Sep 10 16:50:55 2009
 Files:
   idents/cmt/.cvsignore  1.3
