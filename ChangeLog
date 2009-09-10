@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 10 16:36:50 PDT 2009
+GlastRelease-scons/idents/src
+
+Modified Files:
+	VolumeIdentifier.cxx 
+Log Message:
+Fix compiler warning
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug  6 17:00:24 PDT 2009
 GlastRelease-scons/idents
 
