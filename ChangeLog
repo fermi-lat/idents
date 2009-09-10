@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+TAG
+Tag name: idents-02-20-02, operation: add
+Package: idents
+User: jrb  Thu Sep 10 16:50:49 2009
+Files:
+  idents/.cvsignore  1.4
+  idents/identsLib.py  1.1
+  idents/ChangeLog  1.218
+  idents/SConscript  1.6
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 10 16:50:43 PDT 2009
 GlastRelease-scons/idents/doc
 
