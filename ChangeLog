@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 10 16:50:43 PDT 2009
+GlastRelease-scons/idents
+
+Modified Files:
+	SConscript 
+Log Message:
+GoGui_auto-tag
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 10 16:49:55 PDT 2009
 GlastRelease-scons/idents/cmt
 
