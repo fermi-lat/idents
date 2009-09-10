@@ -2,6 +2,26 @@
 TAG
 Tag name: idents-02-20-02, operation: add
 Package: idents
+User: jrb  Thu Sep 10 16:51:06 2009
+Files:
+  idents/idents/blank.cxx  1.1
+  idents/idents/AcdConv.h  1.1
+  idents/idents/ModuleId.h  1.4
+  idents/idents/AcdGapId.h  1.1
+  idents/idents/mainpage.h  1.3
+  idents/idents/GlastAxis.h  1.2
+  idents/idents/TkrId.h  1.12
+  idents/idents/VolumeIdentifier.h  1.13
+  idents/idents/TowerId.h  1.5
+  idents/idents/AcdId.h  1.17
+  idents/idents/CalLogId.h  1.4
+  idents/idents/CalXtalId.h  1.8
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: idents-02-20-02, operation: add
+Package: idents
 User: jrb  Thu Sep 10 16:51:00 2009
 Files:
   idents/doc/release.notes  1.40
