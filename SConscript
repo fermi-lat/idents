@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/idents/SConscript,v 1.6 2009/09/10 23:50:43 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/idents/SConscript,v 1.7 2010/06/11 00:46:02 jrb Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
-# Version: idents-02-20-02
+# Version: idents-02-20-03
 import os
 Import('baseEnv')
 Import('listFiles')
