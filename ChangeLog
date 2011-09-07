@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: idents
+User: heather  Wed Sep  7 10:21:08 2011
+Files:
+  idents/.cvsignore  1.5
+  idents/identsLib.py  1.1
+  idents/ChangeLog  1.227
+  idents/SConscript  1.8
+  idents/cmt/.cvsignore  1.3
+  idents/cmt/requirements  1.38
+  idents/cmt/Makefile  1.1.1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: idents
 User: glastrm  Tue Sep  6 14:17:02 2011
