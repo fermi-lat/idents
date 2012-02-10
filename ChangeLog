@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-19-04-01-gr08, operation: add
 Package: idents
+User: heather  Thu Feb  9 16:02:24 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-04-01-gr08, operation: add
+Package: idents
 User: heather  Thu Feb  9 12:21:48 2012
 Files:
   idents/.cvsignore  1.5
